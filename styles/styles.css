@@ -7,6 +7,25 @@
     box-sizing: border-box;
 }
 
+/* Modo oscuro */
+
+.dark-mode {
+    color: #fff;
+    background-color: #000;
+    
+}
+
+.sol-luna{
+    font-size: 1.5rem;
+}
+
+.fa-moon{
+    display: block;
+}
+.fa-sun{
+    display: none;
+}
+
 .contenedor {
     width: 80vw;
     margin: 0 auto;
@@ -16,12 +35,23 @@
     width: 5vw;
     max-width: 3rem;
     min-width: 3rem;
+    padding-bottom: 0;
+
 }
 
 .contenedor-logo{
     display: flex;
     flex-direction: row;
+}
+
+.logo-texto {
     font-size: 2rem;
+    padding-bottom: 0;
+    color: #333;
+}
+
+.sol-luna{
+    color: #333;
 }
 
 /* .logo-texto{
@@ -71,6 +101,37 @@
     background-color: #555;
     color: white;
 }
+
+/* Hora y fecha */
+
+#clockdate {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+.clockdate-wrapper {
+    padding: .6rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.clockdate-wrapper p {
+    margin: 0;
+}
+
+.clockdate-wrapper span {
+    font-weight: bold;
+}
+
+#clock {
+    font-size: 1rem;
+}
+
+#date {
+    font-size: 1rem;
+}
+
 
 /* Seccion informacion general */
 
@@ -153,6 +214,29 @@
     font-size: 1rem;
 }
 
+/* Boton subir */
+
+#btnVolverArriba {
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 1.6rem;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: .9rem;
+    border-radius: 4px;
+}
+
+#btnVolverArriba:hover {
+    background-color: #777;
+}
+
+
 
 /* Responsive Moviles */
 
@@ -188,7 +272,13 @@
         width: 90vw;
     }
 
-        .algunos_usos {
-            grid-template-columns: 1fr;
-        }
+    .algunos_usos {
+        grid-template-columns: 1fr;
+    }
+
+    #btnVolverArriba {
+        bottom: 2rem;
+    }
+
+
 }
