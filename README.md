@@ -13,6 +13,7 @@ Una pagina de contacto, con un formulario y un mapa para ver la localizacion.
 El proyecto es reponsive para dispositivos moviles y computadores escritorio.
 
 Github page: https://jonathaneche.github.io/Jonathan_Eche/
+Pagina en netlify: https://bicienergy.netlify.app/
 
 # Prueba practica - Integracion de funcionanlidades en la pagina usando Javascript
 
